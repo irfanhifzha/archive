@@ -76,7 +76,7 @@ BEGIN
     OUTPUT "Menghitung nilai rata-rata.."
     DECLARE total_ipk <- 0
     FOR i <- 1 TO jumlah_input DO
-        total_ipk <- total_ipk + mhs INDEX i VARIABLE ipk
+        total_ipk <- total_ipk + mhs INDEX i VARIABEL ipk
     ENDFOR
 
     total_ipk = total_ipk / jumlah_input
