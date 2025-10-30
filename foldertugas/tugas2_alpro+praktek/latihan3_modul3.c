@@ -30,12 +30,20 @@ int main(){
     // Membaca ulang file
 
     file_mahasiswa = fopen("mahasiswa.txt", "r");
-    printf("\nMembaca File...\n");
+    printf("\n== Membaca File... ==\n\n");
     for (int p=0; p<jumlah_input; p++){
         fscanf(file_mahasiswa, "%s | %s | %f", mhs[p].nama, mhs[p].nim, &mhs[p].ipk);
         printf("%s | %s | %.2f\n", mhs[p].nama, mhs[p].nim, mhs[p].ipk);
     }
+    
+    printf("\n== End of file. ==\n");
+    printf("\nMenghitung nilai rata-rata...\n");
 
+    float total_ipk = 0;
+    for (int r=0; r<jumlah_input; r++){
+        total_ipk += mhs[r].ipk;
+    }
+    printf("Rata-rata IPK: %f", total_ipk/jumlah_input);
     fclose(file_mahasiswa);
 
     return 0;
