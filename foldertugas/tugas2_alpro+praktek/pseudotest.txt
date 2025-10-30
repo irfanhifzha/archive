@@ -4,12 +4,13 @@
 
 Latihan 1: Tukar dua nilai dengan pointer.
 
-BEGIN
-    ALGORITHM swap(a, b)
-        temp <- a
-        a <- b
-        b <- temp
+ALGORITHM swap(a, b)
+    temp <- a
+    a <- b
+    b <- temp
+END ALGORITHM
 
+BEGIN
     DECLARE a, b AS INTEGER
     INPUT a, b
     swap(a, b)
@@ -20,7 +21,26 @@ END
 
 Latihan 2: Struct Mahasiswa dengan pointer
 
+STRUCT Mahasiswa
+    DECLARE nama AS CHARACTER
+    DECLARE nim AS CHARACTER
+    DECLARE ipk AS FLOAT
+END STRUCT
 
+BEGIN
+    DECLARE jumlah_input AS INTEGER
+    INPUT jumlah_input
+
+    DECLARE struct mahasiswa AS mhs
+    DECLARE pointer1 AS pointer to INTEGER <- struct mhs
+    
+    FOR i <- 1 TO jumlah_input DO
+        INPUT mhs
+    ENDFOR
+    
+    OUTPUT semua mhs
+END
+    
 
 
 
