@@ -4,19 +4,17 @@
 
 Latihan 1: Tukar dua nilai dengan pointer.
 
+BEGIN
+    ALGORITHM swap(a, b)
+        temp <- a
+        a <- b
+        b <- temp
 
-
-
-
-
-
-
-
-
-
-
-
-
+    DECLARE a, b AS INTEGER
+    INPUT a, b
+    swap(a, b)
+    OUTPUT a, b
+END
 
 ///////////////////////////////////////////////////
 
