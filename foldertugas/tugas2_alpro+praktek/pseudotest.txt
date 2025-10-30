@@ -4,10 +4,10 @@
 
 Latihan 1: Tukar dua nilai dengan pointer.
 
-ALGORITHM swap(a, b)
-    temp <- a
-    a <- b
-    b <- temp
+ALGORITHM swap(pointer_a, pointer_b)
+    temp <- pointer_a
+    pointer_a <- pointer_b
+    pointer_b <- temp
 END ALGORITHM
 
 BEGIN
@@ -35,25 +35,11 @@ BEGIN
     DECLARE pointer1 AS pointer to INTEGER <- struct mhs
     
     FOR i <- 1 TO jumlah_input DO
-        INPUT mhs
+        INPUT mhs LEWAT pointer1 PADA setiap variabel yang ada di struct mhs
     ENDFOR
     
     OUTPUT semua mhs
 END
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ///////////////////////////////////////////////////
@@ -61,20 +47,43 @@ END
 Latihan 3: Simpan data Mahasiswa ke file dan Baca data Mahasiswa dari file dan hitung IPK
 rata-rata
 
+STRUCT Mahasiswa
+    DECLARE nama AS CHARACTER
+    DECLARE nim AS CHARACTER
+    DECLARE ipk AS FLOAT
+END STRUCT
 
+BEGIN
+    DECLARE jumlah_input AS INTEGER
+    INPUT jumlah_input
 
+    DECLARE struct mahasiswa AS mhs
 
+    DECLARE file_mahasiswa AS FILE
+    file_mahasiswa <- MEMBUKA FILE mahasiswa.txt
+    
+    FOR i <- 1 TO jumlah_input DO
+        INPUT mhs
+    ENDFOR
 
+    file_mahasiswa CLOSE
+    OUTPUT "Data berhasil disimpan ke file mahasiswa.txt"
 
+    file_mahasiswa <- MEMBACA FILE mahasiswa.txt
+    SCAN file_mahasiswa TO struct mhs
+    OUTPUT semua mhs
 
+    OUTPUT "Menghitung nilai rata-rata.."
+    DECLARE total_ipk <- 0
+    FOR i <- 1 TO jumlah_input DO
+        total_ipk <- total_ipk + mhs INDEX i VARIABLE ipk
+    ENDFOR
 
+    total_ipk = total_ipk / jumlah_input
+    OUTPUT "Rata-rata IPK: ", total_ipk
 
-
-
-
-
-
-
+    file_mahasiswa CLOSE
+END
 
 
 ///////////////////////////////////////////////////
