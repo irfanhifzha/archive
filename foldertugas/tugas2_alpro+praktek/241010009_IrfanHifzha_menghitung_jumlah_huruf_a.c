@@ -11,12 +11,20 @@ int counta_iteratif(char word[]){
     } return count;
 }
 
+    // ^^
+    // Time complexity: O(n)
+    // Space complexity: O(1)
+
 int counta_rekursif(char word[]){
     if (word[0] == '\0') return 0;
     int count = (word[0] == 'a') ? 1 : 0;
 
     return count + counta_rekursif(word+1);
 }
+
+    // ^^
+    // Time complexity: O(n)
+    // Space complexity: O(n)
 
 int main(){
     char kata[50];
@@ -29,4 +37,7 @@ int main(){
     int hasilV2;
     hasilV2 = counta_rekursif(kata);
     printf("(REKURSIF) Jumlah huruf 'a' dari kata tsb ada: %d\n", hasilV2);
+
+    return 0;
+
 }
