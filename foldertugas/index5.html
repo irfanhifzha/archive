@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+</head>
+<body>
+
+    <h2>Demo JavaScript</h2>
+    <p id="hobi"> Hasil Hobi</p>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">Jam Berapa Sekarang?</button>
+    <p id="demo">Demo</p>
+
+    <select id="pilihobi" onchange="myFunctionHobi()">
+        <option value="">-- Pilih Hobi --</option>
+        <option value="Hobi Lari">Lari</option>
+        <option value="Hobi Renang">Renang</option>
+    </select>
+    <p id="texthobi">Hasil Hobi</p>
+
+    <script language="JavaScript">
+        var hobi = prompt("Masukkan Hobi Anda: ");
+        document.getElementById("hobi").innerHTML = "Hobi Anda adalah: " + hobi;
+
+        // ALERT saat load
+        alert("Hallo Nova!");
+
+        // WRITE ke body (setelah alert)
+        document.write("Selamat Mencoba JavaScript <br>");
+        document.write("Semoga Sukses! <br><br>");
+
+        // FUNCTION EVENT SELECT
+        function myFunctionHobi(){
+            var x = document.getElementById("pilihobi").value;
+            document.getElementById("texthobi").innerHTML = "Anda Memilih : " + x;
+
+        }
+
+        document.write("<h3>Gabungan Contoh Dasar (tambahan) JS</h3>");
+
+        // Contoh VAR dan operasi langsung
+        var a = 10;
+        var b = 12;
+
+        document.write("Variabel a: " + a + "<br>");
+        document.write("Variabel b: " + b + "<br>");
+        document.write("<br>");
+
+        document.write("Hasil langsung dari a * b = " + (a * b) + "<br><br>");
+
+        // FUNCTION dengan parameter + return
+        function perkalian2(b){
+            var hasil = b * 2;
+            return hasil;
+        }
+
+        // Panggil function dan tampilkan
+        document.write("Hasil dari perkalian2(" + b + ") adalah " + perkalian2(b) + "<br>");
+        document.write("Nilai b tetap = " + b + "<br>");
+    
+
+    </script>
+
+
+</body>
+</html>
