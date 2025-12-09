@@ -20,7 +20,11 @@ body {
 /* --- TEXT --- */
 /* ----------- */
 
-
+h1 {
+	font-family: roboto;
+	font-weight: bold;
+	
+}
 
 
 
@@ -41,10 +45,19 @@ body {
 /* ------------ */
 
 /* --- Container Utama --- */
-.container {
+.pre-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.my-container {
     width: 100%;
     max-width: 400px;
     padding: 20px;
+	border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+	
 }
 
 /* --- Kotak Form Login --- */
