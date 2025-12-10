@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        NusaLearning.id
+    </title>
+
+    <link href="favicon.png" rel="icon" type="image/png" />
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	
+
+    <!-- link FONT -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css"> 
+    
+</head>
+
+<body>
+
+
+
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-md bg-body-tertiary">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="./index.html">
+				<img src="LOGO-NusaLearning.png" alt="Logo_NusaLearning" height="25">
+			</a>
+			<a class="navbar-toggler" href="" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-md-0"
+			  
+				<li class="nav-item">
+				  <a class="nav-link" href="./about.html">About</a>
+				</li>
+				
+				<li class="nav-item">
+				  <a class="nav-link" href="./community.html">Community</a>
+				</li>
+			  
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Courses
+				  </a>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="./courses.html">Bisnis Digital</a></li>
+					<li><a class="dropdown-item" href="./courses.html">Rekayasa Perangkat Lunak</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="./courses.html">See more..</a></li>
+				  </ul>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="./help.html">Help Center</a>
+				</li>
+
+			  </ul>
+			  
+			 <form class="d-flex ms-auto">
+				<a class="btn btn-outline-success me-2" href="./signup.html">Sign Up</a>
+				<a class="btn btn-outline-secondary" href="./signin.html">Sign In</a>
+			</form>
+			</div>
+		  </div>
+		</nav> 
+
+
+
+		<!-- FORM SIGN UP -->
+		<div class="container-fluid bg-white" style="height:800px">
+		  <div class="container position-absolute top-50 start-50 translate-middle text-center" style="width: 500px;">
+			<div class="signup-form">
+			  <img src="LOGO-NusaLearning.png" alt="Logo_NusaLearning" height="60px">
+			  <br><br>
+			  <h4 class="fs-6">Sign Up</h4>
+			  <form id="signupForm" onsubmit="return validateSignup()">
+				<div class="form-group">
+				  <label for="email">Email:</label>
+				  <input type="text" id="email" name="email" required placeholder="cont: user@example.com...">
+				</div>
+				<div class="form-group">
+				  <label for="password">Password:</label>
+				  <input type="password" id="password" name="password" required placeholder="cont: password...">
+				</div>
+				<div class="form-group">
+				  <label for="confirmPassword">Confirm Password:</label>
+				  <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="confirm password...">
+				</div>
+				<div class="form-group">
+				  <label>
+					<input type="checkbox" id="terms" name="terms" required> I agree to the <a href="">Terms and Conditions</a>
+				  </label>
+				</div>
+				<button type="submit">Daftar Akun</button>
+				<br><br>
+				<p style="text-align:right; font-size:14px;">Forgot Password? <a style="color:blue; text-decoration:none;" href="">Click Here</a></p>
+			  </form>
+			</div>
+		  </div>
+		</div>
+
+		<script>
+		  function validateSignup() {
+			// Ambil nilai dari form
+			var email = document.getElementById('email').value;
+			var password = document.getElementById('password').value;
+			var confirmPassword = document.getElementById('confirmPassword').value;
+			var terms = document.getElementById('terms').checked;
+
+			// Cek apakah password dan confirm password sesuai
+			if (password !== confirmPassword) {
+			  alert("Passwords do not match. Please try again.");
+			  return false; // Mencegah form untuk submit
+			}
+
+			// Cek apakah terms disetujui
+			if (!terms) {
+			  alert("You must agree to the terms and conditions.");
+			  return false; // Mencegah form untuk submit
+			}
+
+			// Logic tambahan untuk menyimpan data pendaftaran (misalnya mengirim ke server)
+			// Gantilah dengan server-side code untuk menyimpan data pengguna (AJAX atau form submission)
+			alert("Registration successful! You can now log in.");
+			window.location.href = "index.html"; // Redirect to login page after successful sign up
+			return false; // Mencegah form untuk submit
+		  }
+		</script>
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="text-center pt-5 pb-3">
+					<p style="font-size:12px">© Copyright by 241010009_IRFANHIFZHA_TRPL</p>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous">
+	</script>
+
+
+</body>
+</html>

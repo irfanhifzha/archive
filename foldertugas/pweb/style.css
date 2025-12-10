@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
     font-family: Inter, "Roboto", "Open Sans", sans-serif;
     background: white;
@@ -20,11 +25,6 @@ body {
 /* --- TEXT --- */
 /* ----------- */
 
-h1 {
-	font-family: roboto;
-	font-weight: bold;
-	
-}
 
 
 
@@ -53,12 +53,242 @@ h1 {
 
 .my-container {
     width: 100%;
-    max-width: 400px;
     padding: 20px;
 	border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 	
 }
+
+
+
+
+
+
+
+
+
+
+/*--new */
+
+.course-scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    text-align: center; /* centers first card */
+}
+
+.course-card {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    margin-right: 15px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.course-card:hover {
+    transform: translateY(-4px);
+	/*outline: 2px solid #458CFF;*/
+}
+}
+
+/* Optional scrollbar styling */
+.course-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.course-scroll::-webkit-scrollbar-thumb {
+    background: #d0d0d0;
+    border-radius: 4px;
+}
+
+
+/*--new2*/
+
+.feature-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 0 0 330px; /* fixed width */
+    height: 180px;   /* fixed height so all cards are same size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card i {
+    color: #ff6f61; /* optional icon color */
+}
+
+
+
+
+
+
+footer {
+    background-color: #333; /* Darker background for better contrast */
+    color: #f8f9fa;  /* Light text color */
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107; /* Soft yellow on hover for a modern look */
+}
+
+footer .bi {
+    font-size: 1.8rem; /* Slightly larger icons */
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .social-icons a {
+    font-size: 1.8rem; /* Larger icons for social links */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: translateY(-5px); /* Hover effect for icons */
+    color: #ffc107;  /* Yellow hover color */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h5 {
+    font-size: 1.3rem; /* Slightly larger headings */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer p, footer ul li {
+    font-size: 0.95rem;
+}
+
+footer ul li {
+    margin-bottom: 10px; /* Space between links */
+}
+
+footer .text-center {
+    font-size: 0.85rem;
+    color: #ccc; /* Lighter text for copyright */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer .col-md-4 {
+        margin-bottom: 30px; /* Adds space between columns on mobile */
+    }
+
+    footer .social-icons a {
+        font-size: 2rem; /* Slightly larger social media icons on small screens */
+    }
+}
+
+
+
+
+/*--new3*/
+
+
+/* Basic styling for <p> inside <li> */
+li p {
+    font-size: 1rem;         /* Standard font size */
+    color: white;             /* Dark grey color for text */
+    margin: 0;               /* Remove default margin */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for <p> inside <li> */
+li p:hover {
+    color: #458CFF;          /* Change text color to blue on hover */
+    transform: scale(1.05);   /* Slight zoom effect on hover */
+}
+
+
+
+
+
+/* Make the social icons smaller */
+.social-icon i {
+  font-size: 1.5rem; /* Adjust size as needed */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color change */
+}
+
+/* Change color on hover */
+.social-icon:hover i {
+  color: #00aced; /* Change color to a different one, like Twitter's blue */
+  transform: scale(1.2); /* Scale up the icon slightly on hover */
+}
+
+/* Optional: Set a maximum size for the icons container */
+.social-icons {
+  display: flex;
+}
+
+/* Optional: Space out the icons with a gap */
+.social-icons a {
+  margin-right: 15px; /* Adjust the space between icons */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Remove margin on the last item */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--new5*/
+
+/* --- Kotak Form Login --- */
+.signup-form {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
 
 /* --- Kotak Form Login --- */
 .login-form {
@@ -69,13 +299,7 @@ h1 {
     text-align: center;
 }
 
-/* --- Judul "Login" (Mirip Logo Facebook) --- */
-.login-form h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #1877f2; /* Warna biru khas Facebook */
-    margin-bottom: 20px;
-}
+
 
 /* --- Grup Form (Label + Input) --- */
 .form-group {

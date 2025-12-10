@@ -28,7 +28,7 @@
 <body>
 
 
-		<!-- NAVBAR -->
+<!-- NAVBAR -->
 		<nav class="navbar navbar-expand-md bg-body-tertiary">
 		  <div class="container-fluid">
 			<a class="navbar-brand" href="./index.html">
@@ -75,138 +75,152 @@
 		</nav> 
 		
 		
-		<!-- LANDING -->
-		<div class="container-fluid p-0 position-relative" style="height: 650px;">
-
-			<!-- PLACEHOLDER Background image -->
-			<img src="https://images.pexels.com/photos/18346466/pexels-photo-18346466/free-photo-of-kota-universitas-ghana-pandangan-mata-burung.png" 
-				 style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.3);">
-				 
-
-			<!-- Overlay content -->
+		
+		
+		<!-- Hero Section for courses -->
+		<section class="container-fluid p-0 position-relative text-center bg-info text-white" style="height: 350px;">
 			<div class="position-absolute top-50 start-50 translate-middle text-white text-center">
-				<h1 style="font-family: roboto; font-weight: bold;" class="display-3">
-					Belajar Bersama NusaLearning.id
-				</h1>
-				<p>
-					Pelajari Skill Baru dan Jalani Hidup dengan Penuh Ilmu.</p>
-				<div class="d-flex flex-column align-items-center" >
-					<a class="btn btn-primary mb-2" href="./about.html">Get Started</a>
-					<a class="btn btn-outline-light" href="./courses.html">Browse Courses</a>
-				</div>
+				<h1 style="font-family: roboto; font-weight: bold;" class="display-3">Explore Our Courses</h1>
+				<p class="lead">Find the perfect course to boost your skills and career.</p>
 			</div>
-
-		</div>
-		
-		<!-- LINE BATAS -->
-		<div class="col-12 col-md-12 bg-dark" style="height: 2px;"></div>
+		</section>
 		
 		
-		<!-- FEATURED COURSES -->
-		<div class="container-fluid py-4 px-3 bg-white" style="height: 470px;">
-			<h4 class="text-center mb-3">Featured Courses</h4>
-
-			<!-- Scroll container -->
-			<div class="course-scroll pt-2 pb-3 px-3" style="background: white;">
-
-				<!-- Card -->
-				<div class="card course-card">
-					<img src="https://images.pexels.com/photos/8730980/pexels-photo-8730980.jpeg" class="card-img-top" style="height:185px;">
-					<div class="card-body d-flex flex-column">
-						<h6 class="card-title">Bisnis Digital</h6>
-						<p class="card-text small">
-							Strategi bisnis digital modern.
-						</p>
+		
+		
+		<!-- Course Filter Section -->
+		<section id="course-filters" class="py-5">
+			<div class="container">
+				<h2 class="text-center mb-4">Filter Courses</h2>
+				<div class="row justify-content-center">
+					<div class="col-md-4 mb-3">
+						<select class="form-select">
+							<option selected>Filter by Category</option>
+							<option value="1">Web Development</option>
+							<option value="2">Digital Marketing</option>
+							<option value="3">Data Science</option>
+							<option value="4">Design</option>
+						</select>
 					</div>
-					
-					<a class="btn btn-sm btn-primary mb-2" href="./courses.html">
-					Learn More ->
-					</a>
-				</div>
-
-				<div class="card course-card">
-					<img src="https://images.pexels.com/photos/16129724/pexels-photo-16129724/free-photo-of-man-working-on-computers-coding.jpeg" class="card-img-top" style="height:185px;">
-					<div class="card-body d-flex flex-column">
-						<h6 class="card-title">Rekayasa Perangkat Lunak</h6>
-						<p class="card-text small">
-							Praktik rekayasa profesional.
-						</p>
-					</div>
-					
-					<a class="btn btn-sm btn-primary mb-2" href="./courses.html">
-					Learn More ->
-					</a>
-				</div>
-
-				<div class="card course-card">
-					<div class="card-body">
-						<br><br><br><br><br><br>
-						<h6 class="card-text big text-muted">
-						More Soon...</h6>
+					<div class="col-md-4 mb-3">
+						<select class="form-select">
+							<option selected>Filter by Difficulty</option>
+							<option value="1">Beginner</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Advanced</option>
+						</select>
 					</div>
 				</div>
-
 			</div>
-		</div>
-		
+		</section>
 
-		
-		
-		
-		<!-- ABOUT INTRO -->
-		<div class="container-fluid py-2 bg-white">
-			<h4 class="text-center">Kenapa NusaLearning.id?</h4>
-		</div>
-
-
-
-
-		<div class="feature-container d-flex flex-wrap justify-content-center gap-4 py-5 px-2" style="background: #F7F7F7;">
-
-			<div class="feature-card p-3" style="min-width: 250px;">
-				<div class="bi bi-journal-text display-4 fs-2 mb-3"></div>
-				<h5>Content</h5>
-				<p class="small">Materi pembelajaran lengkap dan berkualitas tinggi.</p>
+		<!-- Course List Section -->
+		<section id="course-list" class="py-5">
+			<div class="container">
+				<h2 class="text-center mb-4">Our Popular Courses</h2>
+				<div class="row">
+					<!-- Course 1 -->
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Web Development">
+							<div class="card-body">
+								<h5 class="card-title">Introduction to Web Development</h5>
+								<p class="card-text">Learn the basics of HTML, CSS, and JavaScript in this beginner-friendly course.</p>
+								<p class="card-text"><strong>IDR 300,000</strong></p>
+								<a href="#" class="btn btn-success">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Course 2 -->
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Digital Marketing">
+							<div class="card-body">
+								<h5 class="card-title">Digital Marketing Fundamentals</h5>
+								<p class="card-text">Master the fundamentals of SEO, SEM, and Social Media Marketing in this comprehensive course.</p>
+								<p class="card-text"><strong>IDR 500,000</strong></p>
+								<a href="#" class="btn btn-success">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Course 3 -->
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Data Science">
+							<div class="card-body">
+								<h5 class="card-title">Data Science for Beginners</h5>
+								<p class="card-text">Get started with Python and learn the basics of data analysis and machine learning.</p>
+								<p class="card-text"><strong>IDR 600,000</strong></p>
+								<a href="#" class="btn btn-success">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Course 4 -->
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Design">
+							<div class="card-body">
+								<h5 class="card-title">Graphic Design with Photoshop</h5>
+								<p class="card-text">Learn how to create stunning designs and graphics using Adobe Photoshop in this hands-on course.</p>
+								<p class="card-text"><strong>IDR 450,000</strong></p>
+								<a href="#" class="btn btn-success">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Course 5 -->
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Marketing">
+							<div class="card-body">
+								<h5 class="card-title">Advanced Digital Marketing</h5>
+								<p class="card-text">Take your marketing skills to the next level by diving deep into advanced SEO, SEM, and analytics strategies.</p>
+								<p class="card-text"><strong>IDR 700,000</strong></p>
+								<a href="#" class="btn btn-success">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Course 6 -->
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Web Development">
+							<div class="card-body">
+								<h5 class="card-title">Advanced Web Development</h5>
+								<p class="card-text">Learn advanced JavaScript, React.js, Node.js, and more in this comprehensive web development course.</p>
+								<p class="card-text"><strong>IDR 800,000</strong></p>
+								<a href="#" class="btn btn-success">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-
-			<div class="feature-card p-3" style="min-width: 250px;">
-				<div class="bi bi-person-badge display-4 fs-2 mb-3"></div>
-				<h5>Expert Instructors</h5>
-				<p class="small">Belajar dari para profesional berpengalaman.</p>
-			</div>
-
-			<div class="feature-card p-3" style="min-width: 250px;">
-				<div class="bi bi-clock display-4 fs-2 mb-3"></div>
-				<h5>Flexible Learning</h5>
-				<p class="small">Belajar kapan saja, di mana saja, sesuai kecepatan Anda.</p>
-			</div>
-
-			<div class="feature-card p-3" style="min-width: 250px;">
-				<div class="bi bi-award display-4 fs-2 mb-3"></div>
-				<h5>Certificates</h5>
-				<p class="small">Dapatkan sertifikat setelah menyelesaikan kursus.</p>
-			</div>
-
-			<div class="feature-card p-3" style="min-width: 250px;">
-				<div class="bi bi-people display-4 fs-2 mb-3"></div>
-				<h5>Community Support</h5>
-				<p class="small">Bergabung dengan komunitas pembelajar kami.</p>
-			</div>
-
-		</div>
+		</section>
 		
 		
 		
-		<div class="container-fluid py-5 text-center bg-white" style="height:250px">
-			<h4 class="py-2">
-			Join With Us and Start Learning Today!
-			</h4>
-			<a class="btn btn-lg btn-outline-success me-2" style="border-radius: 20px;" href="./signup.html">Sign Up</a>
-			
-		</div>
-
-
-
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		<!-- FOOOTER -->
 		<footer class="bg-dark text-light pt-5">
 			<div class="container">
@@ -252,13 +266,10 @@
 				</div>
 			</div>
 		</footer>
-
-
-
-
-
-
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"
+		
+		
+		
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous">
     </script>
